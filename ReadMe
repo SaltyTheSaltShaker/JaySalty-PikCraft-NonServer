@@ -1,1 +1,29 @@
-Blah
+---JaySalty's Hocotate Crafters Rebloomed Minecraft Modpack---
+Version 1.0
+
+This pack is intended to be used on your own private singleplayer/multiplayer Minecraft worlds.
+
+
+---IMPORTANT---
+This modpack requires Fabric 0.15.3 in Minecraft 1.20.1 in order to function correctly.
+
+
+---MODPACK INCLUSIONS---
+
+- Pikmin Origins
+- Treasures and Custom Blocks
+- Custom Pikmin Player Models
+- Jun's PikCraft (edited for HCR)
+
+
+---INSTALLATION---
+
+Step 1: Put the datapack folder inside of your own minecraft world folder [ .minecraft\saves\"world_name"\datapacks ]
+
+Step 2: Put the resource pack zip inside of your resource pack folder [ .minecraft\resourcepacks ]
+
+Step 3: Put the mods folder inside of your .minecraft folder [ .minecraft\mods ]
+
+Step 4: Put the player_models folder in your .minecraft folder [ .minecraft\player_models ]
+
+If you did everything correctly it should work properly
