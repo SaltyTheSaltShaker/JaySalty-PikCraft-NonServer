@@ -1,0 +1,23 @@
+{
+    "type": "origins:multiple",
+    "inventory": {
+        "type": "origins:inventory",
+        "title": "Extra Capacity",
+        "drop_on_death": true,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "sound": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:block.chest.open"
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "name": "Extra Capacity [Secondary]",
+    "description": "Due to Purple Pikmin strenght, you can carry a few extra items! You can access this extra inventory by using your secondary key."
+}

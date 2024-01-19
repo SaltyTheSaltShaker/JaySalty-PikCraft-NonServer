@@ -1,0 +1,20 @@
+{
+	"powers": [
+		"pikmin:piki/happa_mgr",
+		"pikmin:ice_walk",
+		"pikmin:ice",
+		"pikmin:ice_def",
+		"pikmin:ice_speed",
+		"pikmin:ice_skin",
+		"pikmin:float",
+		"pikmin:fire_damage",
+		"pikmin:pik_health",
+		"pikmin:medium_size",
+		"origins:vegetarian"
+	],
+	"icon": "minecraft:light_blue_candle",
+	"order": 17,
+	"impact": 0,
+	"name": "Ice Pikmin",
+	"description": "Ice Pikmin have a special body made entirely out of ice, which allows them to freeze anything they want!"
+}

@@ -1,0 +1,24 @@
+{
+    "type": "origins:stacking_status_effect",
+    "name": "Land Weakness",
+    "description": "You are slower on land.",
+    "hidden": false,
+    "condition": {
+        "type": "origins:submerged_in",
+        "inverted": true,
+        "fluid": "minecraft:water"
+    },
+    "min_stacks": 0,
+    "max_stacks": 20,
+    "duration_per_stack": 2,
+    "effects": [
+        {
+            "duration": 100,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false,
+            "effect": "minecraft:slowness",
+            "amplifier": 0
+        }
+    ]
+}

@@ -1,0 +1,439 @@
+{
+    "name": "Rock Slam [Primary]",
+    "description": "You can throw yourself at enemies with your rocky body, knocking them back and hurting them significantly.",
+	"cooldown": 120,
+    "hidden": false,
+	"type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+        {
+        "type": "origins:add_velocity",
+            "z": 1,
+            "space": "local",
+            "set": true
+        },
+        {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+			 "type": "origins:damage",
+				"amount": 6,
+				"source": {
+					"name": "charging",
+					"fire": false,
+					"bypasses_armor": true
+				},
+				"duration": 5
+			}
+		}
+        },
+		{
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 1,
+				"space": "local",
+				"set": true
+			}
+		}
+        },
+        {
+            "type": "origins:delay",
+            "ticks": 1,
+            "action": {
+				"type": "origins:area_of_effect",
+				"radius": 2,
+				"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+				 "type": "origins:damage",
+					"amount": 6,
+					"source": {
+						"name": "charging",
+						"fire": false,
+						"bypasses_armor": true
+					},
+					"duration": 5
+				}
+			}
+            }
+        },
+		{
+			"type": "origins:delay",
+            "ticks": 1,
+            "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local",
+				"set": true
+			}
+		}
+	}
+        },
+        {
+
+            "type": "origins:delay",
+            "ticks": 2,
+            "action": {
+				"type": "origins:area_of_effect",
+				"radius": 2,
+				"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+				 "type": "origins:damage",
+					"amount": 6,
+					"source": {
+						"name": "charging",
+						"fire": false,
+						"bypasses_armor": true
+					},
+					"duration": 5
+				}
+			}
+            }
+        },
+		{
+			"type": "origins:delay",
+            "ticks": 2,
+            "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local",
+				"set": true
+			}
+		}
+	}
+        },
+        {
+            "type": "origins:delay",
+            "ticks": 3,
+            "action": {
+				"type": "origins:area_of_effect",
+				"radius": 2,
+				"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+				 "type": "origins:damage",
+					"amount": 6,
+					"source": {
+						"name": "charging",
+						"fire": false,
+						"bypasses_armor": true
+					},
+					"duration": 5
+				}
+			}
+            }
+        },
+		{
+			"type": "origins:delay",
+            "ticks": 3,
+            "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local",
+				"set": true
+			}
+		}
+	}
+        },
+        {
+            "type": "origins:delay",
+            "ticks": 4,
+            "action": {
+				"type": "origins:area_of_effect",
+				"radius": 2,
+				"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+				 "type": "origins:damage",
+					"amount": 6,
+					"source": {
+						"name": "charging",
+						"fire": false,
+						"bypasses_armor": true
+					},
+					"duration": 5
+				}
+			}
+            }
+        },
+		{
+			"type": "origins:delay",
+            "ticks": 4,
+            "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local",
+				"set": true
+			}
+		}
+	}
+        },
+        {
+            "type": "origins:delay",
+            "ticks": 5,
+            "action": {
+				"type": "origins:area_of_effect",
+				"radius": 2,
+				"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+				 "type": "origins:damage",
+					"amount": 6,
+					"source": {
+						"name": "charging",
+						"fire": false,
+						"bypasses_armor": true
+					},
+					"duration": 5
+				}
+			}
+            }
+        },
+		{
+			"type": "origins:delay",
+            "ticks": 5,
+            "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local",
+				"set": true
+			}
+		}
+	}
+        },
+        {
+            "type": "origins:delay",
+            "ticks": 6,
+            "action": {
+				"type": "origins:area_of_effect",
+				"radius": 2,
+				"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+				 "type": "origins:damage",
+					"amount": 6,
+					"source": {
+						"name": "charging",
+						"fire": false,
+						"bypasses_armor": true
+					},
+					"duration": 5
+				}
+			}
+            }
+        },
+		{
+			"type": "origins:delay",
+            "ticks": 6,
+            "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local",
+				"set": true
+			}
+		}
+	}
+        },
+        {
+            "type": "origins:delay",
+            "ticks": 7,
+            "action": {
+				"type": "origins:area_of_effect",
+				"radius": 2,
+				"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+				 "type": "origins:damage",
+					"amount": 6,
+					"source": {
+						"name": "charging",
+						"fire": false,
+						"bypasses_armor": true
+					},
+					"duration": 5
+				}
+			}
+            }
+        },
+		{
+			"type": "origins:delay",
+            "ticks": 7,
+            "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local",
+				"set": true
+			}
+		}
+	}
+        },
+        {
+            "type": "origins:delay",
+            "ticks": 8,
+            "action": {
+				"type": "origins:area_of_effect",
+				"radius": 2,
+				"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+				 "type": "origins:damage",
+					"amount": 6,
+					"source": {
+						"name": "charging",
+						"fire": false,
+						"bypasses_armor": true
+					},
+					"duration": 5
+				}
+			}
+            }
+        },
+				{
+			"type": "origins:delay",
+            "ticks": 8,
+            "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local",
+				"set": true
+			}
+		}
+	}
+        },
+        {
+            "type": "origins:delay",
+            "ticks": 9,
+            "action": {
+				"type": "origins:area_of_effect",
+				"radius": 2,
+				"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+				 "type": "origins:damage",
+					"amount": 6,
+					"source": {
+						"name": "charging",
+						"fire": false,
+						"bypasses_armor": true
+					},
+					"duration": 5
+				}
+			}
+            }
+        },
+		{
+			"type": "origins:delay",
+            "ticks": 9,
+            "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local",
+				"set": true
+			}
+		}
+	}
+        },
+        {
+        "type": "origins:delay",
+        "ticks": 10,
+        "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+			 "type": "origins:damage",
+				"amount": 6,
+				"source": {
+					"name": "charging",
+					"fire": false,
+					"bypasses_armor": true
+				},
+				"duration": 5
+			}
+		}
+        }
+        },
+		{
+			"type": "origins:delay",
+            "ticks": 10,
+            "action": {
+			"type": "origins:area_of_effect",
+			"radius": 2,
+			"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local",
+				"set": true
+			}
+		}
+	}
+        }
+    ]
+    },
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+        "bar_index": 1
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+
+        "continuous": false
+    }
+}	

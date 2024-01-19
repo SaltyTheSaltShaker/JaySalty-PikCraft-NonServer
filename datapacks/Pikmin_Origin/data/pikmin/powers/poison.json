@@ -1,0 +1,38 @@
+{
+	"type": "origins:multiple",
+	"name": "Poison Cloud",
+	"description": "You can release a poisonous cloud that will inflict Poison on anyone inside of it.",
+	"punch": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+			{
+				"type": "origins:spawn_effect_cloud",
+				"radius": 5.0,
+				"wait_time": 1,
+				"effect": {
+					"effect": "minecraft:poison",
+					"amplifier": 1,
+					"duration": 50
+				}
+			}, 
+			{
+				"type": "origins:change_resource",
+				"resource": "odd:shulk_proj_proper_res",
+				"change": 20
+			},
+			{
+                "type": "origins:execute_command",
+                "command": "particle minecraft:dust 0.64 0 0.28 3 ~ ~ ~ 2 1 2 0 3000 normal"
+            }
+			]
+		},
+		"cooldown": 400,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 23
+		}
+	}
+}

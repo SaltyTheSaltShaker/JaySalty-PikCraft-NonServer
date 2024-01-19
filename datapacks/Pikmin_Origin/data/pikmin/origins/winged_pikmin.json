@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"pikmin:piki/happa_mgr",
+		"pikmin:flight",
+		"pikmin:air_affinity",
+		"pikmin:slowfall",
+		"pikmin:small_size",
+		"pikmin:water_damage",
+		"pikmin:weakness",
+		"pikmin:pik_health",
+		"origins:vegetarian"
+	],
+	"icon": "minecraft:pink_candle",
+	"order": 16,
+	"impact": 0,
+	"name": "Winged Pikmin",
+	"description": "Winged Pikmin have large eyes, a striped belly, and most importantly, wings! They can fly from place to place quickly, but they’re not very strong."
+}

@@ -1,0 +1,26 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen":
+    {
+        "type": "origins:execute_command",
+        "command": "function pikmin:rock"
+    },
+    "entity_action_respawned":
+    {
+        "type": "origins:execute_command",
+        "command": "function pikmin:rock"
+    },
+    "entity_action_lost":
+    {
+        "type": "origins:execute_command",
+        "command": "function pikmin:regular"
+    },
+    "entity_action_removed":
+    {
+        "type": "origins:execute_command",
+        "command": "function pikmin:regular"
+    },
+	"name": "Pikmin Sized",
+	"description": "You are shorter than the average player.",
+    "hidden": false
+}

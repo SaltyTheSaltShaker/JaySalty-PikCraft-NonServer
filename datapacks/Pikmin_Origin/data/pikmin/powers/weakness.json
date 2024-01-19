@@ -1,0 +1,18 @@
+{
+    "name": "Quick Feets",
+    "description": "White Pikmin are very small, and because of this, they are a bit weak.",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 625,
+    "tick_rate": 10,
+    "effects": [
+        {
+            "effect": "weakness",
+            "duration": 1000000,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ]
+}

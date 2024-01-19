@@ -1,0 +1,18 @@
+{
+  "name": "Phamtom Teleportation",
+  "description": "You can teleport yourself once in a while.",
+  "type": "origins:fire_projectile",
+  "cooldown": 1000,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 6
+  },
+  "entity_type": "origins:enderian_pearl",
+  "sound": "minecraft:entity.ender_pearl.throw",
+  "speed": 1.5,
+  "divergence": 1,
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  }
+}

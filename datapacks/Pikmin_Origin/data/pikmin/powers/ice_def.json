@@ -1,0 +1,150 @@
+{
+	"type": "origins:multiple",
+	"name": "Ice Immunity",
+	"description": "You're immune to freezing damage. You won't sink in powder snow unless you want to and you can punch through it while sneaking.",
+
+	"immune_to_freezing": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "freeze"
+		}
+	},
+	"climbing": {
+		"type": "origins:climbing",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:in_block_anywhere",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:powder_snow"
+					}
+				},
+				{
+					"type": "origins:sneaking",
+					"inverted": true
+				}
+			]
+		}
+	},
+	"walk": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "minecraft:levitation",
+				"duration": 3,
+				"amplifier": -1,
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			}
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:command",
+					"command": "execute if block ~ ~-0.25 ~ minecraft:powder_snow",
+					"comparison": "==",
+					"compare_to": 1
+				},
+				{
+					"type": "origins:sneaking",
+					"inverted": true
+				}
+			]
+		}
+	},
+	"dont_sink": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "minecraft:levitation",
+				"duration": 3,
+				"amplifier": -1,
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			}
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:in_block_anywhere",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:powder_snow"
+					}
+				},
+				{
+					"type": "origins:sneaking",
+					"inverted": true
+				}
+			]
+		}
+	},
+	"no_slowdown": {
+		"type": "origins:phasing",
+		"condition": {
+			"type": "origins:in_block_anywhere",
+			"block_condition": {
+				"type": "origins:block",
+				"block": "minecraft:powder_snow"
+			}
+		},
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:powder_snow"
+		}
+	},
+	"hit_through": {
+		"type": "origins:prevent_block_selection",
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:powder_snow"
+		},
+		"condition": {
+			"type": "origins:sneaking"
+		}
+	},
+	"fall_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		},
+		"condition": {
+			"type": "origins:in_block_anywhere",
+			"block_condition": {
+				"type": "origins:block",
+				"block": "minecraft:powder_snow"
+			}
+		},
+		"self_action": {
+			"type": "origins:execute_command",
+			"command": "resource set @s aftsd:fall_discharge_timer 200"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -1
+		}
+	},
+	"extinguish": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:extinguish"
+		},
+		"condition": {
+			"type": "origins:in_block_anywhere",
+			"block_condition": {
+				"type": "origins:block",
+				"block": "minecraft:powder_snow"
+			}
+		}
+	}
+}

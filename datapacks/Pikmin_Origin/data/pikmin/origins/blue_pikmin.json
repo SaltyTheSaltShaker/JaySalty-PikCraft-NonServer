@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"pikmin:piki/happa_mgr",
+		"pikmin:water",
+		"origins:water_vision",
+		"origins:swim_speed",
+		"origins:aqua_affinity",
+		"origins:like_water",
+		"origins:aquatic",
+		"pikmin:water_boost",
+		"pikmin:pik_health",
+		"pikmin:medium_size",
+		"pikmin:land",
+		"origins:vegetarian"
+	],
+	"icon": "minecraft:blue_candle",
+	"order": 12,
+	"impact": 0,
+	"name": "Blue Pikmin",
+	"description": "Blue Pikmin have special gills that let them breathe underwater. Unsurprisingly, they love the water and are excellent swimmers."
+}

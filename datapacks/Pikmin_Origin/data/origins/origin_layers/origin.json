@@ -1,0 +1,15 @@
+{
+	"replace": true,
+    "origins": [
+        "pikmin:red_pikmin",
+		"pikmin:yellow_pikmin",
+		"pikmin:blue_pikmin",
+		"pikmin:purple_pikmin",
+		"pikmin:white_pikmin",
+		"pikmin:rock_pikmin",
+		"pikmin:winged_pikmin",
+		"pikmin:ice_pikmin",
+		"pikmin:glow_pikmin",
+		"pikmin:castaway"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 4
+        },
+        "condition": {
+            "type": "origins:on_block",
+            "inverted": true
+        },
+        "name": "Air Affinity",
+        "description": "You may break blocks in the air as others do on land."
+    }

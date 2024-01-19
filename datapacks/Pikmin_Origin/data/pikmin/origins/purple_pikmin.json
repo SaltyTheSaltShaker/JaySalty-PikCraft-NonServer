@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"pikmin:piki/happa_mgr",
+		"pikmin:ground_slam",
+		"pikmin:storage",
+		"pikmin:slowness",
+		"origins:fall_immunity",
+		"pikmin:water_damage",
+		"origins:vegetarian",
+		"pikmin:tall_size"
+	],
+	"icon": "minecraft:purple_candle",
+	"order": 13,
+	"impact": 0,
+	"name": "Purple Pikmin",
+	"description": "Purple Pikmin are extra large, and they have little hair-like feelers on their heads. They’re super strong—but they’re also super slow."
+}

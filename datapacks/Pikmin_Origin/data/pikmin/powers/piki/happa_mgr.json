@@ -1,0 +1,186 @@
+{
+    "name": "Plant Hybrid",
+    "description": "Pikmin are known to have a small stem with a plant on top of it. Because of this, you can drink Nectar Bottle evolve to Leaf from Bud to Flower, which will increase your movement speed. You have a 30% chance to go to the lower state if you take damage.",
+	"type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2,
+        "should_render": true,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 22
+        }
+    },
+    "use_honey": {
+        "type": "origins:action_on_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:honey_bottle"
+            }
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 2
+                },
+                {
+                    "type": "origins:grant_power",
+                    "power": "*:piki/happa1",
+                    "source": "*:*"
+                },
+                {
+                    "type": "origins:grant_power",
+                    "power": "*:piki/happa2",
+                    "source": "*:*"
+                }
+            ]
+        }
+    },
+    "modify_honey": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:honey_bottle"
+            }
+        },
+        "food_modifier": {
+            "operation": "multiply_base",
+            "value": -1
+        },
+        "saturation_modifier": {
+            "operation": "multiply_base",
+            "value": -1
+        },
+        "always_edible": true
+    },
+    "damage_taken_1": {
+        "type": "origins:action_when_damage_taken",
+        "cooldown": 1,
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": ">=",
+            "compare_to": 2
+        },
+        "entity_action": {
+            "type": "origins:chance",
+            "chance": 0.333333333,
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "change": -1
+                    },
+                    {
+                        "type": "origins:if_else",
+                        "condition": {
+                            "type": "origins:resource",
+                            "resource": "*:*_resource",
+                            "comparison": "==",
+                            "compare_to": 1
+                        },
+                        "if_action": {
+                            "type": "origins:revoke_power",
+                            "power": "*:piki/happa2",
+                            "source": "*:*"
+                        },
+                        "else_action": {
+                            "type": "origins:revoke_power",
+                            "power": "*:piki/happa1",
+                            "source": "*:*"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "damage_taken_2": {
+        "type": "origins:action_when_damage_taken",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": ">=",
+            "compare_to": 5
+        },
+        "entity_action": {
+            "type": "origins:chance",
+            "chance": 0.333333333,
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "change": -1
+                    },
+                    {
+                        "type": "origins:if_else",
+                        "condition": {
+                            "type": "origins:resource",
+                            "resource": "*:*_resource",
+                            "comparison": "==",
+                            "compare_to": 1
+                        },
+                        "if_action": {
+                            "type": "origins:revoke_power",
+                            "power": "*:piki/happa2",
+                            "source": "*:*"
+                        },
+                        "else_action": {
+                            "type": "origins:revoke_power",
+                            "power": "*:piki/happa1",
+                            "source": "*:*"
+                        }
+                    }
+                ]
+            }
+        },
+        "cooldown": 1
+    },
+    "callback": {
+        "type": "origins:action_on_callback",
+        "entity_action_lost": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:revoke_power",
+                    "power": "*:piki/happa1",
+                    "source": "*:*"
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "*:piki/happa2",
+                    "source": "*:*"
+                }
+            ]
+        },
+        "entity_action_respawned": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "*:piki/happa1",
+                    "source": "*:*"
+                },
+                {
+                    "type": "origins:revoke_power",
+                    "power": "*:piki/happa2",
+                    "source": "*:*"
+                }
+            ]
+        }
+    }
+}

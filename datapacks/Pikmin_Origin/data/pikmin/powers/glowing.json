@@ -1,0 +1,12 @@
+{
+    "name": "Glowing",
+    "description": "Hence the name, you glow naturally.",
+	"type": "origins:self_glow",
+	"bientity_condition": {
+		"type": "origins:can_see"
+	},
+	"use_teams": false,
+	"red": 0.0,
+	"green": 1.0,
+	"blue": 0.0
+}

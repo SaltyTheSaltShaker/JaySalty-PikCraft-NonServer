@@ -1,0 +1,24 @@
+{
+	"powers": [
+		"pikmin:piki/happa_mgr",
+		"origins:phantomize",
+		"origins:phasing",
+		"origins:invisibility",
+		"origins:cat_vision",
+		"pikmin:slowfall",
+		"pikmin:electricity",
+		"pikmin:poison_def",
+		"pikmin:ice_def",
+		"pikmin:teleport",
+		"pikmin:glowing",
+		"origins:burn_in_daylight",
+		"pikmin:small_size",
+		"pikmin:glow_health",
+		"origins:vegetarian"
+	],
+	"icon": "minecraft:lime_candle",
+	"order": 18,
+	"impact": 0,
+	"name": "Glow Pikmin",
+	"description": "Glow Pikmin are nocturnal Pikmin who are immune to all elements, and have ghostly properties."
+}

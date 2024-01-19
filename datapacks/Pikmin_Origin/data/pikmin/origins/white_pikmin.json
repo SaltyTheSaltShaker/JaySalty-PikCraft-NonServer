@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"pikmin:piki/happa_mgr",
+		"pikmin:poison",
+		"pikmin:speed",
+		"origins:velvet_paws",
+		"pikmin:poison_def",
+		"pikmin:water_damage",
+		"pikmin:weakness",
+		"pikmin:pik_health",
+		"pikmin:white_size",
+		"origins:vegetarian"
+	],
+	"icon": "minecraft:white_candle",
+	"order": 14,
+	"impact": 0,
+	"name": "White Pikmin",
+	"description": "White Pikmin have big red eyes compared to their small, nimble bodies. Don’t let their size fool you though; they’re poisonous!"
+}

@@ -1,0 +1,14 @@
+{
+	"type": "origins:multiple",
+
+	"meleedmgreduce": {
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "multiply_total",
+			"value": 1.5
+		}
+	},
+	"name": "Sharp Nose",
+	"description": "You deal 50% more damage with melee attacks due to your sharp nose."
+}

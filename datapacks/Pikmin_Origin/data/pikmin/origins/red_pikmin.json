@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"pikmin:piki/happa_mgr",
+		"origins:fire_immunity",
+		"pikmin:lava",
+		"pikmin:fire",
+		"pikmin:red_strenght",
+		"pikmin:red_water_damage",
+		"pikmin:red_health",
+		"origins:no_shield",
+		"origins:vegetarian",
+		"pikmin:medium_size"
+	],
+	"icon": "minecraft:red_candle",
+	"order": 10,
+	"impact": 0,
+	"name": "Red Pikmin",
+	"description": "Red Pikmin have a sharp, nose-like spine on their face—and they’re immune to fire! They are very good fighter on any situation."
+}

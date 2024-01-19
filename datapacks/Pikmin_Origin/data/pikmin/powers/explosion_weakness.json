@@ -1,0 +1,22 @@
+{
+    "name": "Explosion Weakness",
+    "description": "You are very weak to Explosions as they are effective agaisnt your rock body.",
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:name",
+                "name": "explosion"
+            },
+            {
+                "type": "origins:name",
+                "name": "explosion.player"
+            }
+        ]
+    },
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 2
+    }
+}

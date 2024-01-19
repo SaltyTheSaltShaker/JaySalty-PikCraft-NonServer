@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"pikmin:piki/happa_mgr",
+		"pikmin:electricity",
+		"pikmin:high_jump",
+		"pikmin:light_body",
+		"pikmin:haste",
+		"pikmin:slowfall",
+		"pikmin:water_damage",
+		"pikmin:pik_health",
+		"pikmin:medium_size",
+		"origins:vegetarian"
+	],
+	"icon": "minecraft:yellow_candle",
+	"order": 11,
+	"impact": 0,
+	"name": "Yellow Pikmin",
+	"description": "Yellow Pikmin have ear-like membranes on the sides of their heads, and they love electricity so much you can sometimes hear them buzzing."
+}

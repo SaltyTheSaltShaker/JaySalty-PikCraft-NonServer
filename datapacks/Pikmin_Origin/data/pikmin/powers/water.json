@@ -1,0 +1,11 @@
+{
+    "name": "Water Breathing",
+	"description": "Thanks to your small gills, you can breath underwater",
+    "hidden": false,
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 40
+    }
+}

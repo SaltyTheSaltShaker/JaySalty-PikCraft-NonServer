@@ -1,0 +1,20 @@
+{
+	"powers": [
+		"pikmin:piki/happa_mgr",
+		"pikmin:rock_slam",
+		"origins:natural_armor",
+		"origins:strong_arms_break_speed",
+		"pikmin:eat_stone",
+		"pikmin:explosion_weakness",
+		"pikmin:projectile_damage",
+		"pikmin:water_damage",
+		"pikmin:pik_health",
+		"origins:vegetarian",
+		"pikmin:rock_size"
+	],
+	"icon": "minecraft:gray_candle",
+	"order": 15,
+	"impact": 0,
+	"name": "Rock Pikmin",
+	"description": "Rock Pikmin are as tough as they come. They can break any crystal or glass with ease."
+}

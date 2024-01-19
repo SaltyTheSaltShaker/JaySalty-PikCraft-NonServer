@@ -1,0 +1,42 @@
+{
+    "name": "Slow Faller",
+    "description": "Your falling speed is slower, removing fall damage.",
+    "loading_priority": 1,
+    "type": "origins:multiple",
+    "lowvelocity": {
+        "type": "origins:modify_falling",
+        "name": "slow",
+        "velocity": 0.03,
+        "take_fall_damage": true
+    },
+    "lessfall": {
+        "type": "origins:modify_damage_taken",
+        "name": "less fall damage",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -10
+        }
+    },
+    "lessfallheight": {
+        "condition": {
+            "type": "origins:fall_distance",
+            "comparison": "<=",
+            "compare_to": 6
+        },
+        "type": "origins:modify_damage_taken",
+        "name": "negates fall damage",
+        "description": "but only when 6 or less blocks of falling height.",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -1
+        }
+    }
+}

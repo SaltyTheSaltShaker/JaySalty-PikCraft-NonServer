@@ -1,0 +1,9 @@
+{
+	"name": "Poison Resistant",
+	"description": "Any poison doesnt affect you.",
+	"type": "origins:effect_immunity",
+	"effects": [
+		"minecraft:poison",
+		"minecraft:hunger"
+	]
+}

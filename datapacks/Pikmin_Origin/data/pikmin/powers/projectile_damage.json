@@ -1,0 +1,14 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:projectile",
+        "projectile": "minecraft:arrow"
+    },
+    "modifier": {
+        "name": "Weak To Projectiles",
+        "operation": "addition",
+        "value": 4
+    },
+    "name": "Projectile Weakness",
+    "description": "Projectiles are effective against your stone body, so you take extra damage to arrows."
+}

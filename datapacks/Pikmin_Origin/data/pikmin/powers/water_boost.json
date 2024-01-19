@@ -1,0 +1,37 @@
+{
+  "name": "Water Boost [Secondary]",
+  "description": "You can perform a great boost towards the direction you're swimming.",
+  "type": "origins:active_self",
+  "cooldown": 60,
+  "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+  },
+  "key": {
+        "key": "key.origins.secondary_active"
+  },
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+    "bar_index": 16
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:add_velocity",
+        "z": 2,
+        "space": "local",
+        "client": false,
+        "server": true
+      },
+      {
+    "type": "origins:exhaust",
+   "amount": "1.0"
+      },
+      {
+    "type": "origins:execute_command",
+    "command": "particle minecraft:bubble ~ ~1 ~ 0.5 0.5 0.5 0 20"
+      }
+    ]
+  }
+}

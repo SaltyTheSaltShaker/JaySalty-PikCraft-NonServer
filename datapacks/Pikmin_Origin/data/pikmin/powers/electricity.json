@@ -1,0 +1,9 @@
+{
+    "name": "Shock Resistant",
+    "description": "You are naturally resistant to electricity, thus lighting bolt and electrostone doesnt hurt you.",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "lightningBolt"
+    }
+}
