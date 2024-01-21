@@ -1,0 +1,14 @@
+{
+    "values": [
+        "minecraft:redstone_block",
+        "#chipped:redstone_block",
+        "minecraft:redstone_torch",
+        "#chipped:redstone_torch",
+        "minecraft:redstone_wall_torch",
+        "#pikmin:chipped_redstone_wall_torch",
+        "minecraft:redstone_wire",
+        "minecraft:repeater",
+        "minecraft:comparator",
+        "#minecraft:redstone_ores"
+    ]
+}
