@@ -1,5 +1,6 @@
 {
     "values": [
-        "minecraft:blue_ice"
+        "minecraft:blue_ice",
+        "#chipped:blue_ice"
     ]
 }
