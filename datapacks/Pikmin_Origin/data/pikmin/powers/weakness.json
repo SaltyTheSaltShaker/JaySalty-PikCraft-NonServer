@@ -1,6 +1,6 @@
 {
-    "name": "Quick Feets",
-    "description": "White Pikmin are very small, and because of this, they are a bit weak.",
+    "name": "Poor Fighter",
+    "description": "These Pikmin are very small, and because of this, they are a bit weak.",
     "type": "origins:stacking_status_effect",
     "min_stacks": 0,
     "max_stacks": 1,
