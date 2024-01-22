@@ -1,5 +1,5 @@
 {
-    "name": "Quick Feets",
+    "name": "Quick Feet",
     "description": "White Pikmin are very small and quick, so you have permanent Speed.",
     "type": "origins:stacking_status_effect",
     "min_stacks": 0,
