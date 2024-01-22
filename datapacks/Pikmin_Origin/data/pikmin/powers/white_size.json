@@ -7,8 +7,12 @@
     },
     "entity_action_respawned":
     {
-        "type": "origins:execute_command",
-        "command": "function pikmin:white"
+        "type": "origins:delay",
+        "ticks": 1,
+        "action": {
+            "type": "origins:execute_command",
+            "command": "function pikmin:white"
+        }
     },
     "entity_action_lost":
     {
