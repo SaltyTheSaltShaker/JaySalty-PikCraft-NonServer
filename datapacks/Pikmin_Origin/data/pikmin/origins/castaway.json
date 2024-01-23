@@ -1,4 +1,9 @@
 {
+	"powers": [
+		"pikmin:fire_hazard",
+		"pikmin:elec_hazard",
+		"pikmin:ice_hazard"
+	],
 	"icon": "minecraft:black_candle",
 	"order": 19,
 	"impact": 0,

@@ -1,6 +1,9 @@
 {
 	"powers": [
 		"pikmin:piki/happa_mgr",
+		"pikmin:fire_hazard",
+		"pikmin:elec_hazard",
+		"pikmin:ice_hazard",
 		"pikmin:electricity",
 		"pikmin:high_jump",
 		"pikmin:light_body",
