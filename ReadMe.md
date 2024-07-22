@@ -23,7 +23,7 @@ Step 2: Put the mods folder inside of your .minecraft folder `.minecraft\mods`
 
 Step 3: Put the datapack folder inside of your own minecraft world folder `.minecraft\saves\"world_name"\datapacks`
 
-Step 4: Put the [resource pack zip](https://drive.google.com/file/d/1ghIZ9m0Ic5knietcBpAdsl7V1slIcF5B/view?usp=sharing) inside of your resource pack folder `.minecraft\resourcepacks`
+Step 4: Put the [resource pack zip](https://www.planetminecraft.com/texture-pack/jun-s-pikcraft-resource-pack/) inside of your resource pack folder `.minecraft\resourcepacks`
 
 Step 5: Put the player_models folder in your .minecraft folder `.minecraft\player_models`
 
