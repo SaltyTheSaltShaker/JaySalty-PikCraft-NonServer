@@ -1,1 +1,0 @@
-tellraw @a ["",{"text":"Redstone and Blue Ice deals damage by ","color":"dark_green"},{"text":"Zanahoria8 and LazyBoii","color":"gold","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/member/zanahoria8/"}},{"text":" loaded","color":"dark_green"}]

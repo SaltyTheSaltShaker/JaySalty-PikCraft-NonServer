@@ -1,0 +1,51 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "inverted": true,
+                "type": "origins:equipped_item",
+                "equipment_slot": "feet",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:leather_boots"
+                    }
+                }
+            },
+            {
+                "type": "origins:block_collision",
+                "offset_y": -0.01,
+                "block_condition": {
+                    "type": "origins:in_tag",
+                    "tag": "*:fire_hazard_blocks"
+                }
+            }
+        ]
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:damage",
+                "amount": 5,
+                "damage_type": "minecraft:in_fire"
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:flame",
+                "offset_y": 0.5,
+                "spread": {
+                    "x": 0.25,
+                    "y": 0.25,
+                    "z": 0.25
+                },
+                "speed": 0.01,
+                "count": 5
+            }
+        ]
+    }
+}
